@@ -25,7 +25,7 @@ namespace COMP003B.LectureActivity6.Controllers
                               join c in _context.Courses on e.CourseId equals c.CourseId
                               where s.StudentId == id
                               select c;
-            return View(student);
+            return View(student); 
         }
     }
 }
